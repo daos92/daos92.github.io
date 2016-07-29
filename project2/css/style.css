@@ -1,0 +1,217 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+}
+
+.page-wrap{
+	max-width:1600px;
+	margin:0 auto;
+	background: #f6f9f9;
+	position: relative;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrp-page{
+	max-width: 1170px;
+	margin:0 auto;
+	position: relative;
+}
+
+.portfolio{
+	text-align: center;
+	padding: 50px 0 115px 0;
+	position: relative;	
+}
+
+.portfolio h2{
+	font: 41px 'Lato',sans-serif;
+	color: #2e3a4f;
+	margin:0;
+	margin-bottom: 10px;
+}
+
+.portfolio span{
+	font-size: 14px;
+	color: #909090;
+}
+
+.foto-contayner{
+	max-width: 1170px;
+	text-align: center;
+	margin-top: 40px;
+	padding-top:40px;
+	position: relative;
+	font-size: 0;	
+}
+
+.foto{
+	width: 360px;
+	height: 260px;
+	background: #ccc;
+	margin: 0 15px 30px 15px;
+	border-radius: 2px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;	
+}
+
+
+.foto:hover .btn{
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.foto::before{
+	content: "";
+	background: #39aee1;
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	opacity: 0;	
+}
+
+.foto:hover::before{
+	opacity: 0.902;
+	transition: opacity 0.2s;
+
+}
+
+.btn{
+	position: absolute;
+	top:109px;
+	text-align: center;
+	opacity: 0;
+	right: 0;
+	left:0;
+	font-size: 15px;
+}
+
+.link, .loop{
+	border-radius: 2px;
+	display: inline-block;
+	border:1px solid #fff;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	margin-right: 10px;
+}
+
+.link{
+	margin-right: 0;
+}
+
+.btn a:hover{
+	background: #25a6f7;
+	cursor:pointer;
+}
+
+/*overlay*/
+
+.preview-box:before{
+	position: fixed;
+	content: "";
+	background: rgba(255,255,255,0.8);
+	z-index: -1;
+	left:0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	
+}
+
+.display-overlay{
+	display: none;
+}
+
+.preview img{
+	position: relative;
+	z-index: -1;
+	margin: -3px;
+	margin-top:-218px;
+}
+
+.close::after{
+	content: "\f00d";
+	font-family: FontAwesome;
+	font-size: 17px;
+	color: #fff;
+}
+
+.preview{
+	overflow: hidden;
+	height: 554px;
+	border:3px solid #999;
+	border-radius: 3px;
+	box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 5;
+
+	
+}
+
+.preview-box{
+	max-width: 1140px;
+	position: absolute;
+	background: #f4f4f4;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	top:40px;
+	
+	
+	
+	
+	
+	
+}
+
+
+a.close{
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	-display: inline-block;
+	line-height: 40px;
+	background: #25a6f7;	
+	position:  absolute;
+	top:-17px;
+	right: 20px;
+
+	
+
+}
+
+
+
+.close:hover{
+	background: #f74c26;
+	transition: 0.2s;
+	cursor:pointer;
+}
+
+-.preview::after{
+	content:"";
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	
+	position: absolute;
+	
+	
+	
+	-display: block;
+	z-index: 5;
+
+}
+
+/*float*/
+
+
