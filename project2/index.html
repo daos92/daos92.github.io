@@ -84,20 +84,32 @@
         console.log(img.length);
         foto = document.querySelectorAll('.foto');
 
-   for(i = 0; i<open.length; i++){
-       open[i].onclick = function(){
+    for(i = 1; i<=foto.length; i++){
+        var saveImg = i;
+        console.log('number'+i);
+        
 
-        for(i = 1; i<=foto.length; i++){
-            if(i<=foto.length){
+        for(i = 0; i<open.length; i++){
+            open[i].onclick = function(){        
+            
+              
               overlay.classList.remove('display-overlay');
-              img.src='img/zoom_img'+i+'.jpg';
+              img.src='img/zoom_img'+saveImg+'.jpg';
 
               console.log(img.src);
 
-            }                 
-        }           
-    };
+            saveImg++;
+                            
+                   
+         };
+       }
+
+        
+
+
    }
+
+   
 
    close.onclick = function(){
 
