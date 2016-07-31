@@ -78,41 +78,42 @@
 
   <script type="text/javascript">
    var overlay = document.querySelector('.preview-box');
-        open = document.querySelectorAll('a.loop');
-        close = document.querySelector('.close');
-        img = document.querySelector('.preview img');
-        console.log(img.length);
-        foto = document.querySelectorAll('.foto');
+     close = document.querySelector('.close');
+     img = document.querySelector('.preview img');
 
-    for(i = 1; i<=foto.length; i++){
-        var saveImg = i;
-        console.log('number'+i);
-        
+    function linkClick(i,a){
+        console.log(i);
+   
+        overlay.classList.remove('display-overlay');
+        img.src='img/zoom_img'+i+'.jpg';
 
-        for(i = 0; i<open.length; i++){
-            open[i].onclick = function(){        
+
+    }
+
+  //  var overlay = document.querySelector('.preview-box');
+  //       open = document.querySelectorAll('a.loop');
+  //       close = document.querySelector('.close');
+  //       img = document.querySelector('.preview img');
+  //       console.log(img.length);
+  //       foto = document.querySelectorAll('.foto');
+  //   for(i = 1; i<=foto.length; i++){
+  //       var saveImg = i;
+  //       console.log('number'+i);
+  //       for(i = 0; i<open.length; i++){
+  //           open[i].onclick = function(){        
             
               
-              overlay.classList.remove('display-overlay');
-              img.src='img/zoom_img'+saveImg+'.jpg';
-
-              console.log(img.src);
-
-            saveImg++;
+  //             overlay.classList.remove('display-overlay');
+  //             img.src='img/zoom_img'+saveImg+'.jpg';
+  //             console.log(img.src);
+  //           saveImg++;
                             
                    
-         };
-       }
-
+  //        };
+  //      }
         
-
-
-   }
-
-   
-
+  //   }
    close.onclick = function(){
-
     if(overlay.classList.contains('display-overlay') == false){
       overlay.classList.add('display-overlay');
       console.log(overlay.classList);
