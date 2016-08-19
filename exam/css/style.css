@@ -703,7 +703,7 @@ background-origin: padding-box, border-box, border-box, border-box, border-box;
 	transition: 0.5s;
 }
 
--.img-block:hover .nav-overlay{
+.img-block:hover .nav-overlay{
 	opacity: 1;
 	transition: 0.5s;
 }
