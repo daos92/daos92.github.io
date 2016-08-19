@@ -591,14 +591,14 @@ background-origin: padding-box, border-box, border-box, border-box, border-box;
 
 /*overlay*/
 
-.nav-overlay{
+.block:last-child .nav-overlay{
 	position: absolute;
 	top: 0;
 	left:0;
 	right: 0;
 	bottom:0;
 	box-shadow: inset 0px 0px 76px 1px rgba(0, 0, 0, 0.7);
-	opacity: 0;
+	opacity: 1;
 }
 
 .button-nav{
