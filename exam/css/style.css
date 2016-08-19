@@ -136,7 +136,7 @@ li a.active{
 	width: 166px;
 	font-size: 12px;
 	list-style: none;
-	display: none;
+	-display: none;
 	position: absolute;
 	top:69px;
 	padding: 0;
@@ -312,13 +312,14 @@ span{
 	right:4px;
 	top:0;
 	transform: rotate(180deg);
+	background-color: rgba(255,255,255,0.3);
 }
 
 .prev:hover{ 
 	background-color: rgba(255,255,255,0.3);
 }
 
-.next:hover{
+-.next:hover{
 	background-color: rgba(255,255,255,0.3);
 }
 
@@ -702,7 +703,7 @@ background-origin: padding-box, border-box, border-box, border-box, border-box;
 	transition: 0.5s;
 }
 
-.img-block:hover .nav-overlay{
+-.img-block:hover .nav-overlay{
 	opacity: 1;
 	transition: 0.5s;
 }
