@@ -601,6 +601,10 @@ background-origin: padding-box, border-box, border-box, border-box, border-box;
 	opacity: 1;
 }
 
+.block .nav-overlay{
+	opacity:0;
+}
+
 .button-nav{
 	position: absolute;
 	top:42px;
