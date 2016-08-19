@@ -306,13 +306,13 @@ span{
 .prev{
 	left: 4px;
 	top:0;
-	transform: rotate(180deg);
+	
 }
 
 .next{
 	right:4px;
 	top:0;
-	transform: rotate(180deg);
+	
 	background-color: rgba(255,255,255,0.3);
 }
 
