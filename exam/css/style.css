@@ -136,7 +136,7 @@ li a.active{
 	width: 166px;
 	font-size: 12px;
 	list-style: none;
-	
+	display: none;
 	position: absolute;
 	top:69px;
 	padding: 0;
