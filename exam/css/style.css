@@ -306,6 +306,7 @@ span{
 .prev{
 	left: 4px;
 	top:0;
+	transform: rotate(180deg);
 }
 
 .next{
